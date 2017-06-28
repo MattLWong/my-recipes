@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+
+      html, body, ul, li {
+        margin: 0;
+        padding: 0;
+        border: 0;
+
+        background: transparent;
+      }
+
+      ul {
+        border: 5px solid black;
+        background: orange;
+        list-style: none;
+        width: 300px;
+        margin: 50px auto;
+      }
+
+      li {
+        border: 5px solid black;
+        background: yellow;
+        width: 90px;
+        height: 90px;
+        float: left;
+      }
+
+      .cf:after {
+        content: "";
+        display:block;
+        clear: both;
+      }
+
+    </style>
+  </head>
+  <body>
+    <ul class="cf">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </body>
+</html>

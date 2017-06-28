@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      html, body, section, article, div, h1, h2, p {
+        margin: 0;
+        border: 0;
+        padding: 0;
+
+        font: inherit;
+        text-align: inherit;
+        text-decoration: inherit;
+        color: inherit;
+        background: transparent;
+      }
+
+      body {
+        padding: 15px;
+        border: 10px solid red;
+
+        font-family: sans-serif;
+        font-weight: bold;
+        color: red;
+        background: url("cat.jpg");
+        background-size: contain;
+      }
+
+      article {
+        color: blue;
+        font-family: serif;
+        background: green;
+      }
+
+      /*This targets the paragraph elements that come immediately after h2 (within the same generation)*/
+      /*h2 + p {
+        color: yellow;
+      }*/
+
+      /*This targets all paragraphs elements that are 1st generation children of article elements*/
+      /*article > p {
+        border: dotted red;
+      }*/
+
+      /*This targets all paragraph elements are come after h2 elements in same generation*/
+      /*h2 ~ p {
+        border: dotted yellow;
+      }*/
+      /*div.first_div p{
+        border: dotted yellow;
+      }
+
+      .second_div {
+        background: maroon;
+      }*/
+
+    </style>
+  </head>
+  <body>
+
+    <h1>My Amazing Document</h1>
+
+    <section>
+      <article>
+        <p>Inside article. This comes before the h2</p>
+        <h2>Cats</h2>
+        <p>I love cats. I love cats. I love cats. I love cats. I love cats. I love cats. I love cats. I love cats.</p>
+        <p>This is the second paragraph after an h2 element </p>
+
+        <h2>Lasers</h2>
+        <p>I love cats. I love cats. I love cats. I love cats. I love cats. I love cats. I love cats. I love cats.</p>
+
+        <h2>Dogs</h2>
+        <p>I love cats. I love cats. I love cats. I love cats. I love cats. I love cats. I love cats. I love cats.</p>
+        <div class="first_div">
+          <h3>an H3. inside the div</h3>
+          <p>This is the first paragraph inside the div</p>
+          <p> This is the second paragraph inside the div </p>
+          <div class="second_div">
+            <p>This is the paragraph inside bleep</p>
+          </div>
+        </div>
+      </article>
+
+    </section>
+  </body>
+</html>
